@@ -11,7 +11,7 @@ import {
   // useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+// import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { NewsSection, NewsDate } from '../components/bio'
 import Layout from '../components/layouts/article'
