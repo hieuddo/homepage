@@ -106,14 +106,14 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Teaching Assistant
         </Heading>
-        <NewsRow>
+        <NewsSection>
           <NewsDate>AY2022/2023 Term 3</NewsDate>
           CS608 Recommender Systems
-        </NewsRow>
-        <NewsRow>
+        </NewsSection>
+        <NewsSection>
           <NewsDate>AY2022/2023 Term 1</NewsDate>
           IS712 Machine Learning
-        </NewsRow>
+        </NewsSection>
       </Section>
 
       <Section delay={0.3}>
