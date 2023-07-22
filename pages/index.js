@@ -85,14 +85,14 @@ const Home = () => (
           News
         </Heading>
         <NewsTable>
-          <TableRow>
-            <DateCell>2023.07.22</DateCell>
-            <TableCell>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</TableCell>
-          </TableRow>
-          <TableRow>
-            <DateCell>2021.11.19</DateCell>
-            <TableCell>Passed Qualifying Exam</TableCell>
-          </TableRow>
+          <NewsRow>
+            <NewsData><strong>2023.07.22</strong></NewsData>
+            <NewsData>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsData>
+          </NewsRow>
+          <NewsRow>
+            <NewsData><strong>2021.11.19</strong></NewsData>
+            <NewsData>Passed Qualifying Exam</NewsData>
+          </NewsRow>
         </NewsTable>
         {/* <NewsSection>
           <NewsDate>2023.07.22</NewsDate>
