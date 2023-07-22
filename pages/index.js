@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 // import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { NewsSection, NewsDate } from '../components/bio'
+import { NewsRow, NewsDate, NewsContent } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -86,19 +86,19 @@ const Home = () => (
         </Heading>
         <NewsSection>
           <NewsDate>2023.07.22</NewsDate>
-          Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”
+          <NewsContent>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsContent>
         </NewsSection>
         <NewsSection>
           <NewsDate>2021.11.19</NewsDate>
-          Passed Qualifying Exam
+          <NewsContent>Passed Qualifying Exam</NewsContent>
         </NewsSection>
         <NewsSection>
           <NewsDate>2020.08.14</NewsDate>
-          Joined PhD programme in SMU School of Computing and Information Systems
+          <NewsContent>Joined PhD programme in SMU School of Computing and Information Systems</NewsContent>
         </NewsSection>
         <NewsSection>
           <NewsDate>2020.07.28</NewsDate>
-          Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award
+          <NewsContent>Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award</NewsContent>
         </NewsSection>
       </Section>
 
@@ -106,14 +106,14 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Teaching Assistant
         </Heading>
-        <NewsSection>
+        <NewsRow>
           <NewsDate>AY2022/2023 Term 3</NewsDate>
           CS608 Recommender Systems
-        </NewsSection>
-        <NewsSection>
+        </NewsRow>
+        <NewsRow>
           <NewsDate>AY2022/2023 Term 1</NewsDate>
           IS712 Machine Learning
-        </NewsSection>
+        </NewsRow>
       </Section>
 
       <Section delay={0.3}>
