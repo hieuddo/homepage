@@ -78,12 +78,14 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           {/* <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
+            Publications
+          </LinkItem> */}
+          {/* <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem> */}
-          <LinkItem href="https://hieuddoblog.vercel.app/">Blog</LinkItem>
+          <LinkItem href="https://hieuddoblog.vercel.app/">
+            Blog
+          </LinkItem>
           {/* <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
@@ -113,21 +115,21 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
+                {/* <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
+                </MenuItem> */}
+                <MenuItem as={MenuLink} href="https://hieuddoblog.vercel.app/">
+                  Personal Blog
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem>
-                <MenuItem
+                {/* <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
