@@ -84,7 +84,17 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           News
         </Heading>
-        <NewsSection>
+        <NewsTable>
+          <TableRow>
+            <DateCell>2023.07.22</DateCell>
+            <TableCell>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</TableCell>
+          </TableRow>
+          <TableRow>
+            <DateCell>2021.11.19</DateCell>
+            <TableCell>Passed Qualifying Exam</TableCell>
+          </TableRow>
+        </NewsTable>
+        {/* <NewsSection>
           <NewsDate>2023.07.22</NewsDate>
           <NewsContent>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsContent>
         </NewsSection>
@@ -99,7 +109,7 @@ const Home = () => (
         <NewsSection>
           <NewsDate>2020.07.28</NewsDate>
           <NewsContent>Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award</NewsContent>
-        </NewsSection>
+        </NewsSection> */}
       </Section>
 
       <Section delay={0.3}>
