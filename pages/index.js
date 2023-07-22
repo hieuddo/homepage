@@ -4,7 +4,7 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
+  // SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,10 +16,10 @@ import Paragraph from '../components/paragraph'
 import { NewsTable, NewsRow, NewsData } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoFacebook, IoMail, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+// import thumbYouTube from '../public/images/links/youtube.png'
+// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -69,13 +69,18 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph>
-          Hi! I am currently a PhD candidate advised by Prof. Hady W. Lauw at SMU School of Computing and Information Systems.
-          I am also a member of Preferred.AI research group.
+          Xin chào (Hello)!
+          I am currently a PhD candidate and a member of Preferred.AI research group,
+          advised by Prof. Hady W. Lauw at SMU School of Computing and Information Systems.
           Previously, I obtained my B.Sc. degree in Computer Science
-          at University of Engineering and Technology, Vietnam National University, Hanoi
+          at University of Engineering and Technology, Vietnam National University, Hanoi,
           under the supervision of Dr. Mai-Vu Tran and Dr. Duc-Trong Le.
 
-          My research interest is about Continual Learning for Recommendation Systems.
+          My primary area of research revolves around the formulation and solution
+          of real-world recommender systems.
+          I am particularly interested in topics such as
+          continual learning for recommender systems
+          and streaming session-based recommendation systems.
         </Paragraph>
 
       </Section>
@@ -172,7 +177,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://preferred.ai/"
             title="Preferred.AI"
@@ -187,7 +192,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
       </Section>
     </Container>
