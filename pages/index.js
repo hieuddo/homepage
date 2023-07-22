@@ -93,38 +93,33 @@ const Home = () => (
             <NewsData><strong>2021.11.19</strong></NewsData>
             <NewsData>Passed Qualifying Exam</NewsData>
           </NewsRow>
+          <NewsRow>
+            <NewsData><strong>2020.08.14</strong></NewsData>
+            <NewsData>Joined PhD programme in SMU School of Computing and Information Systems</NewsData>
+          </NewsRow>
+          <NewsRow>
+            <NewsData><strong>2020.07.28</strong></NewsData>
+            <NewsData>Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award</NewsData>
+          </NewsRow>
         </NewsTable>
-        {/* <NewsSection>
-          <NewsDate>2023.07.22</NewsDate>
-          <NewsContent>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsContent>
-        </NewsSection>
-        <NewsSection>
-          <NewsDate>2021.11.19</NewsDate>
-          <NewsContent>Passed Qualifying Exam</NewsContent>
-        </NewsSection>
-        <NewsSection>
-          <NewsDate>2020.08.14</NewsDate>
-          <NewsContent>Joined PhD programme in SMU School of Computing and Information Systems</NewsContent>
-        </NewsSection>
-        <NewsSection>
-          <NewsDate>2020.07.28</NewsDate>
-          <NewsContent>Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award</NewsContent>
-        </NewsSection> */}
       </Section>
 
-      {/* <Section delay={0.3}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Teaching Assistant
         </Heading>
-        <NewsSection>
-          <NewsDate>AY2022/2023 Term 3</NewsDate>
-          CS608 Recommender Systems
-        </NewsSection>
-        <NewsSection>
-          <NewsDate>AY2022/2023 Term 1</NewsDate>
-          IS712 Machine Learning
-        </NewsSection>
-      </Section> */}
+        <NewsTable>
+          <NewsRow>
+            <NewsData><strong>AY2022/2023 Term 3</strong></NewsData>
+            <NewsData>CS608 Recommender Systems</NewsData>
+          </NewsRow>
+          <NewsRow>
+            <NewsData><strong>AY2022/2023 Term 1</strong></NewsData>
+            <NewsData>IS712 Machine Learning</NewsData>
+          </NewsRow>
+        </NewsTable>
+
+      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
