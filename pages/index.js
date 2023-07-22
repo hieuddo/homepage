@@ -8,7 +8,7 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue,
+  // useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
