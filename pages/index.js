@@ -13,11 +13,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { NewsSection, NewsDate } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoFacebook, IoMail, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -77,58 +77,43 @@ const Home = () => (
 
           My research interest is about Continual Learning for Recommendation Systems.
         </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/works"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            My portfolio
-          </Button>
-        </Box>
+
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          News
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
+        <NewsSection>
+          <NewsDate>2023.07.22</NewsDate>
+          Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”
+        </NewsSection>
+        <NewsSection>
+          <NewsDate>2021.11.19</NewsDate>
+          Passed Qualifying Exam
+        </NewsSection>
+        <NewsSection>
+          <NewsDate>2020.08.14</NewsDate>
+          Joined PhD programme in SMU School of Computing and Information Systems
+        </NewsSection>
+        <NewsSection>
+          <NewsDate>2020.07.28</NewsDate>
+          Graduated from VNU-UET (Summa Cum Laude) with Excellent Thesis Award
+        </NewsSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Teaching Assistant
         </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
+        <NewsSection>
+          <NewsDate>AY2022/2023 Term 3</NewsDate>
+          CS608 Recommender Systems
+        </NewsSection>
+        <NewsSection>
+          <NewsDate>AY2022/2023 Term 1</NewsDate>
+          IS712 Machine Learning
+        </NewsSection>
       </Section>
 
       <Section delay={0.3}>
@@ -137,46 +122,46 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/hieuddo" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @hieuddo
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="mailto:dinhhieu.do.2020@smu.edu.sg" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoMail />}
+              >
+                dinhhieu.do.2020@smu.edu.sg
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/hieeudd" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @hieeudd
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://www.facebook.com/hieeudd/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoFacebook />}
               >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @hieeudd
               </Button>
             </Link>
           </ListItem>
@@ -184,8 +169,8 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://preferred.ai/"
+            title="Preferred.AI"
             thumbnail={thumbYouTube}
           >
             My YouTube channel (&gt;150k subs)
@@ -199,25 +184,6 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
 
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
