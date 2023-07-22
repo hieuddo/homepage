@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 // import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { NewsSection, NewsDate, NewsContent } from '../components/bio'
+import { NewsTable, TableRow, TableCell, DateCell } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
