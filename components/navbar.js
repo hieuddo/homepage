@@ -43,7 +43,7 @@ const MenuLink = forwardRef((props, ref) => (
 ))
 
 const Navbar = props => {
-  const { path } = props
+  // const { path } = props
 
   return (
     <Box
