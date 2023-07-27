@@ -7,29 +7,6 @@
                 "authors": "Jamie Hieu Do and Hady W. Lauw",
                 "conferenceName": "ACM Conference on Recommender Systems (RecSys'23), Late-Breaking Results (LBR) track",
                 "time": "Sep 2023"
-            },
-            {
-                "paperName": "Paper 2",
-                "authors": "Author 3, Author 4",
-                "conferenceName": "Conference 2",
-                "time": "Oct 2023"
-            }
-        ]
-    },
-    {
-        "year": "2022",
-        "publications": [
-            {
-                "paperName": "Paper 3",
-                "authors": "Author 5, Author 6",
-                "conferenceName": "Conference 3",
-                "time": "Jan 2022"
-            },
-            {
-                "paperName": "Paper 4",
-                "authors": "Author 7, Author 8",
-                "conferenceName": "Conference 4",
-                "time": "Mar 2022"
             }
         ]
     }
