@@ -92,7 +92,7 @@ const Home = () => (
         <NewsTable>
           <NewsRow>
             <NewsData><strong>2023.07.22</strong></NewsData>
-            <NewsData>Paper accepted at RecSys-23, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsData>
+            <NewsData>Paper accepted at RecSys-23, Late-Breaking Results (LBR) track, titled “Continual Collaborative Filtering Through Gradient Alignment”</NewsData>
           </NewsRow>
           <NewsRow>
             <NewsData><strong>2021.11.19</strong></NewsData>
@@ -100,7 +100,7 @@ const Home = () => (
           </NewsRow>
           <NewsRow>
             <NewsData><strong>2020.08.14</strong></NewsData>
-            <NewsData>Joined PhD programme in SMU School of Computing and Information Systems</NewsData>
+            <NewsData>Joined Ph.D. program at SMU School of Computing and Information Systems</NewsData>
           </NewsRow>
           <NewsRow>
             <NewsData><strong>2020.07.28</strong></NewsData>
