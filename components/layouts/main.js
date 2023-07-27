@@ -2,13 +2,7 @@ import Head from 'next/head'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-// import dynamic from 'next/dynamic'
-// import VoxelDogLoader from '../voxel-dog-loader'
-
-// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-//   ssr: false,
-//   loading: () => <VoxelDogLoader />
-// })
+import { headerIcon } from '../icons/header-icon.js';
 
 const Main = ({ children, router }) => {
   return (
@@ -18,17 +12,12 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Jaime's homepage" />
         <meta name="author" content="Jaime Hieu Do" />
         <meta name="author" content="craftzdog" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href={headerIcon} />
+        <link rel="shortcut icon" href={headerIcon} type="image/x-icon" />
         <meta name="twitter:title" content="Jaime Hieu Do" />
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" /> */}
         <meta property="og:site_name" content="Jaime Hieu Do" />
         <meta name="og:title" content="Jaime Hieu Do" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:image" content="https://www.craftz.dog/card.png" /> */}
         <title>Jaime Hieu Do - Homepage</title>
       </Head>
 

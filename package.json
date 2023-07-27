@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Jaime's website",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
+  "author": "Jaime Hieu Do",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
