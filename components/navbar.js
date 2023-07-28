@@ -80,21 +80,9 @@ const Navbar = props => {
                     <LinkItem href="/publications" path={path}>
                         Publications
                     </LinkItem>
-                    <LinkItem href="https://hieuddoblog.vercel.app/">
+                    <LinkItem href="https://blog.hieuddo.live/">
                         Blog
                     </LinkItem>
-                    {/* <LinkItem
-                        target="_blank"
-                        href="https://github.com/craftzdog/craftzdog-homepage"
-                        path={path}
-                        display="inline-flex"
-                        alignItems="center"
-                        style={{ gap: 4 }}
-                        pl={2}
-                    >
-                        <IoLogoGithub />
-                        Source
-                    </LinkItem> */}
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -112,21 +100,12 @@ const Navbar = props => {
                                 <MenuItem as={MenuLink} href="/">
                                     About
                                 </MenuItem>
-                                {/* <MenuItem as={MenuLink} href="/works">
-                  Works
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem> */}
-                                <MenuItem as={MenuLink} href="https://hieuddoblog.vercel.app/">
+                                <MenuItem as={MenuLink} href="/publications">
+                                    Publications
+                                </MenuItem>
+                                <MenuItem as={MenuLink} href="https://blog.hieuddo.live/">
                                     Personal Blog
                                 </MenuItem>
-                                {/* <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem> */}
                             </MenuList>
                         </Menu>
                     </Box>
