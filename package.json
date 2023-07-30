@@ -4,7 +4,7 @@
   "description": "Jaime's website",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run render-markdown-files",
+    "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
     "lint": "next lint"
