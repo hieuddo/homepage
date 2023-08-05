@@ -41,8 +41,8 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="128px"
+            h="128px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
@@ -51,8 +51,8 @@ const Home = () => (
               src="/images/profile.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100"
-              height="100"
+              width="128"
+              height="128"
             />
           </Box>
         </Box>
@@ -69,6 +69,7 @@ const Home = () => (
           Previously, I obtained my B.Sc. degree in Computer Science
           at University of Engineering and Technology, Vietnam National University, Hanoi,
           under the supervision of Dr. Mai-Vu Tran and Dr. Duc-Trong Le.
+          <br /> <br />
 
           My primary area of research revolves around the formulation and solution
           of real-world recommender systems.

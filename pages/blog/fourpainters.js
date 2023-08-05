@@ -86,11 +86,11 @@ const Work = () => (
       </Box>
 
       <WorkImage
-        src="/images/works/the-four-painters_eyecatch.jpg"
+        src="/images/blog/the-four-painters_eyecatch.jpg"
         alt="walknote"
       />
-      <WorkImage src="/images/works/the-four-painters_01.jpg" alt="walknote" />
-      <WorkImage src="/images/works/the-four-painters_02.jpg" alt="walknote" />
+      <WorkImage src="/images/blog/the-four-painters_01.jpg" alt="walknote" />
+      <WorkImage src="/images/blog/the-four-painters_02.jpg" alt="walknote" />
     </Container>
   </Layout>
 )
