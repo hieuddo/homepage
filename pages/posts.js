@@ -6,11 +6,6 @@ import { GridItem } from '../components/grid-item'
 import thumbPortfolio from '../public/images/contents/pepefrog.png'
 import thumbHowToUseInkdrop from '../public/images/contents/pepefrog.png'
 import thumbFishWorkflow from '../public/images/contents/pepefrog.png'
-import thumbMyDeskSetup from '../public/images/contents/pepefrog.png'
-import thumb500PaidUsers from '../public/images/contents/pepefrog.png'
-import thumbFinancialGoal from '../public/images/contents/pepefrog.png'
-import thumbHowToPriceYourself from '../public/images/contents/pepefrog.png'
-import thumb50xFaster from '../public/images/contents/pepefrog.png'
 
 const Posts = () => (
   <Layout title="Posts">

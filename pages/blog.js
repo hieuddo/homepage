@@ -7,12 +7,6 @@ import thumbInkdrop from '../public/images/blog/pepefrog.png'
 import thumbWalknote from '../public/images/blog/pepefrog.png'
 import thumbFourPainters from '../public/images/blog/pepefrog.png'
 import thumbMenkiki from '../public/images/blog/pepefrog.png'
-import thumbMargelo from '../public/images/blog/pepefrog.png'
-import thumbModeTokyo from '../public/images/blog/pepefrog.png'
-import thumbStyly from '../public/images/blog/pepefrog.png'
-import thumbPichu2 from '../public/images/blog/pepefrog.png'
-import thumbFreeDBTagger from '../public/images/blog/pepefrog.png'
-import thumbAmembo from '../public/images/blog/pepefrog.png'
 
 const blog = () => (
   <Layout title="blog">

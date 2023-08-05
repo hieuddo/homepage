@@ -7,6 +7,7 @@ const PageHeaderIcon = props => {
             height={20}
             className="w-5 inline-block transition-transform"
             src={headerIcon}
+            alt-text="favicon"
             {...props}
         />
     )
