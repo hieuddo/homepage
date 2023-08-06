@@ -1,5 +1,5 @@
 import { Container, Badge, List, ListItem, Heading, Center } from '@chakra-ui/react'
-import { Title, Meta } from '../../components/blogpost'
+import { Title, Meta } from '../../components/blog'
 import Layout from '../../components/layouts/article'
 import fs from 'fs'
 import matter from 'gray-matter'

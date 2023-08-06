@@ -1,5 +1,5 @@
 import { Container, Badge, List, ListItem, Heading, Center } from '@chakra-ui/react'
-import { Title, Meta } from '../../components/blogpost'
+import { Title, Meta } from '../../components/blog'
 import Layout from '../../components/layouts/article'
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
     const { title, year, createdAt, lastUpdated, tags, description, content } = data
 
     const paragraphs = content.split('\n\n')
-    const html = paragraphs.map(p => `<P>${marked(p)}</P>`).join('')
+    const html = paragraphs.map(p => `<P>${marked(p, { mangle: false, headerIds: false })}</P>`).join('')
 
     return (
         <Layout title={title}>
