@@ -1,58 +1,41 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { BlogGridItem } from '../components/grid-item';
+import { getBlogData } from '../lib/fetchBlogData';
 
-import thumbInkdrop from '../public/images/blog/pepefrog.png'
-import thumbWalknote from '../public/images/blog/pepefrog.png'
-import thumbFourPainters from '../public/images/blog/pepefrog.png'
-import thumbMenkiki from '../public/images/blog/pepefrog.png'
+export const getServerSideProps = async () => {
+  const blogData = getBlogData();
 
-const blog = () => (
-  <Layout title="blog">
+  return {
+    props: {
+      blogData,
+    },
+  };
+};
+
+const Blog = ({ blogData }) => (
+  <Layout title="Blog">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Blog
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
+        {blogData.map((data, index) => (
+          <Section key={index}>
+            <BlogGridItem
+              id={data.slug}
+              title={data.title}
+              thumbnail={data.heroImage}
+            >
+              {data.description}
+            </BlogGridItem>
+          </Section>
+        ))}
       </SimpleGrid>
-
     </Container>
   </Layout>
-)
+);
 
-export default blog
-export { getServerSideProps } from '../components/chakra'
+export default Blog;

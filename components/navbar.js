@@ -80,8 +80,11 @@ const Navbar = props => {
                     <LinkItem href="/publications" path={path}>
                         Publications
                     </LinkItem>
-                    <LinkItem href="https://blog.hieuddo.live/">
+                    <LinkItem href="/blog" path={path}>
                         Blog
+                    </LinkItem>
+                    <LinkItem href="https://blog.hieuddo.live/">
+                        Bloggg
                     </LinkItem>
                 </Stack>
 
@@ -103,8 +106,11 @@ const Navbar = props => {
                                 <MenuItem as={MenuLink} href="/publications">
                                     Publications
                                 </MenuItem>
+                                <MenuItem as={MenuLink} href="/blog">
+                                    Blog
+                                </MenuItem>
                                 <MenuItem as={MenuLink} href="https://blog.hieuddo.live/">
-                                    Personal Blog
+                                    Bloggg
                                 </MenuItem>
                             </MenuList>
                         </Menu>

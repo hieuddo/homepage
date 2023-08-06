@@ -2,6 +2,8 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+const thumbnailBlurDataURL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTI1IDMwTDEyNSAxMjV6Ii8+PC9zdmc+";
+
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
@@ -21,7 +23,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const BlogGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <LinkBox
       as={NextLink}
@@ -33,7 +35,11 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
+        width={350}
+        height={175}
+        style={{ objectFit: 'cover', width: '350px', height: '175px' }}
         placeholder="blur"
+        blurDataURL={thumbnailBlurDataURL}
       />
       <LinkOverlay as="div" href={`/blog/${id}`}>
         <Text mt={2} fontSize={20}>

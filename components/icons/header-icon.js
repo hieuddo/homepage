@@ -1,4 +1,4 @@
-export const headerIcon = '/doge.png';
+export const headerIcon = '/favicon/pepe.png';
 
 const PageHeaderIcon = props => {
     return (
