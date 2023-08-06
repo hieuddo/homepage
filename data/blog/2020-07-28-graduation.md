@@ -5,7 +5,7 @@ description: My Graduation Ceremony in 2020
 createdAt: '2020-07-28'
 lastUpdated: '2022-07-28'
 tags: Event, Milestones
-heroImage: /images/blog/graduation/4.jpg
+heroImage: /images/thumbnail/graduation.jpg
 slug: graduation
 ---
 

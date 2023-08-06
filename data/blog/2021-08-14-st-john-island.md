@@ -5,7 +5,7 @@ description: Our trip to St. John's Island
 createdAt: '2021-08-14'
 lastUpdated: '2021-08-14'
 tags: Travel
-heroImage: /images/blog/stjohn/13.jpg
+heroImage: /images/thumbnail/stjohn.jpg
 slug: stjohn
 ---
 
