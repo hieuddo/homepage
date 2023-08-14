@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jaime's website",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run generate-blog-pages && next dev",
     "build": "npm run generate-blog-pages && next build",
     "start": "next start",
     "prettier": "prettier --write .",

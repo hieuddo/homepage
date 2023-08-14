@@ -48,9 +48,8 @@ const Blog = ({ data }) => {
 
 export default Blog
 
-const filePath = 'sample.md';
-
 export async function getStaticProps() {
+    const filePath = 'sample.md';
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const { data, content } = matter(fileContent)
 

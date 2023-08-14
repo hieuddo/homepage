@@ -1,20 +1,11 @@
 // import NextLink from 'next/link'
-import {
-  Link,
-  Container,
-  Heading,
-  Box,
-  Button,
-  List,
-  ListItem,
-  chakra
-} from '@chakra-ui/react'
+import { Link, Container, Heading, Box, Button, List, ListItem, chakra } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { NewsTable, NewsRow, NewsData } from '../components/news'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoFacebook, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import { IoLogoTwitter, IoLogoFacebook, IoMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -160,6 +151,17 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
+            <Link href="https://www.linkedin.com/in/hieuddo/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                @hieuddo
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
             <Link href="https://www.facebook.com/hieeudd/" target="_blank">
               <Button
                 variant="ghost"
@@ -172,21 +174,21 @@ const Home = () => (
           </ListItem>
         </List>
 
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
+        {/* <SimpleGrid columns={[1, 2]} gap={6}>
+          <BlogGridItem
             href="https://preferred.ai/"
             title="Preferred.AI"
-            thumbnail={thumbYouTube}
+            thumbnail={"/images/thumbnail/preferredai.png"}
           >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            Our research group
+          </BlogGridItem>
+          <BlogGridItem
+            href=""
+            title=""
+            thumbnail="/images/preferred.png"
           >
-            A Markdown note-taking app
-          </GridItem>
+            Placeholder
+          </BlogGridItem>
         </SimpleGrid> */}
 
       </Section>
@@ -195,4 +197,4 @@ const Home = () => (
 )
 
 export default Home
-export { getStaticProps } from '../components/chakra'
+export { getServerSideProps } from '../components/chakra'
