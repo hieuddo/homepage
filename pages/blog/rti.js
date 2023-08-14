@@ -50,7 +50,7 @@ export default Blog
 
 const filePath = 'data/blog/2022-06-15-RTI.md';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const { data, content } = matter(fileContent)
 

@@ -4,7 +4,7 @@ import Section from '../components/section';
 import { BlogGridItem } from '../components/grid-item';
 import { getBlogData } from '../lib/fetchBlogData';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const blogData = getBlogData();
 
   return {
