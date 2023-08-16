@@ -1,10 +1,11 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import theme from '../lib/theme';
+import config from '../config.json';
 
 export default class Document extends NextDocument {
   render() {
-    const trackingId = process.env.GOOGLE_ANALYTICS_TRACKING_ID;
+    const trackingId = config.trackingId;
 
     return (
       <Html lang="en">
