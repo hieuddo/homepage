@@ -32,6 +32,9 @@ const Publications = () => (
                                     authors={pub.authors}
                                     conferenceName={pub.conferenceName}
                                     time={pub.time}
+                                    pdf={pub.pdf}
+                                    DOI={pub.DOI}
+                                    code={pub.code}
                                 />
                             </ListItem>
                         ))}

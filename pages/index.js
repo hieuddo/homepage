@@ -161,17 +161,6 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://www.facebook.com/hieeudd/" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoFacebook />}
-              >
-                @hieeudd
-              </Button>
-            </Link>
-          </ListItem>
         </List>
 
         {/* <SimpleGrid columns={[1, 2]} gap={6}>
