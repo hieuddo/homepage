@@ -5,7 +5,7 @@ import { NewsTable, NewsRow, NewsData } from '../components/news'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
-import { IoLogoTwitter, IoLogoFacebook, IoMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoTwitter, IoMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
