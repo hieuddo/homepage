@@ -11,7 +11,7 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Jaime's homepage" />
         <meta name="author" content="Jaime Hieu Do" />
-        <meta name="author" content="craftzdog" />
+        <meta name="author" content="Jaime Hieu Do" />
         <link rel="apple-touch-icon" href={headerIcon} />
         <link rel="shortcut icon" href={headerIcon} type="image/x-icon" />
         <meta name="twitter:title" content="Jaime Hieu Do" />
@@ -24,7 +24,6 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        {/* <LazyVoxelDog /> */}
 
         {children}
 

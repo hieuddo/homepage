@@ -1,4 +1,3 @@
-// import NextLink from 'next/link'
 import { Link, Container, Heading, Box, Button, List, ListItem, chakra } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { NewsTable, NewsRow, NewsData } from '../components/news'
@@ -55,18 +54,9 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Xin chào (Hello)!
-          I am currently a PhD candidate and a member of Preferred.AI research group,
-          advised by Prof. Hady W. Lauw at SMU School of Computing and Information Systems.
-          Previously, I obtained my B.Sc. degree in Computer Science
-          at University of Engineering and Technology, Vietnam National University, Hanoi,
-          under the supervision of Dr. Mai-Vu Tran and Dr. Duc-Trong Le.
+          I am currently a PhD candidate and a member of Preferred.AI research group, advised by Prof. Hady W. Lauw at SMU School of Computing and Information Systems. Previously, I obtained my B.Sc. degree in Computer Science at University of Engineering and Technology, Vietnam National University, Hanoi, under the supervision of Dr. Mai-Vu Tran and Dr. Duc-Trong Le.
           <br /> <br />
-
-          My primary area of research revolves around the formulation and solution
-          of real-world recommender systems.
-          I am particularly interested in topics such as
-          continual learning for recommender systems
-          and streaming session-based recommendation systems.
+          My primary area of research revolves around the formulation and solution of real-world recommender systems. I am particularly interested in topics such as continual learning for recommender systems and streaming session-based recommendation systems.
         </Paragraph>
 
       </Section>

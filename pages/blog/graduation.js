@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
     const { title, year, createdAt, lastUpdated, tags, description, content } = data
 
     const paragraphs = content.split('\n\n')
-    const html = paragraphs.map(p => `<P>${marked(p, { mangle: false, headerIds: false })}</P>`).join('')
+    const html = paragraphs.map(p => `<P>${marked(p, { mangle: false, headerIds: false })}</P>`).join('</br>') + '</br></br>'
 
     return (
         <Layout title={title}>

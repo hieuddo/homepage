@@ -1,4 +1,4 @@
-export const headerIcon = '/favicon/pepe.png';
+export const headerIcon = '/favicon/monkas.svg';
 
 const PageHeaderIcon = props => {
     return (
@@ -8,7 +8,7 @@ const PageHeaderIcon = props => {
             className="w-5 inline-block transition-transform"
             src={headerIcon}
             alt-text="favicon"
-            alt="pepe the frog"
+            alt="header icon and favicon"
             {...props}
         />
     )
