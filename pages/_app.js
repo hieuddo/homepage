@@ -14,7 +14,6 @@ function Website({ Component, pageProps, router }) {
       <Fonts />
       <Layout router={router}>
         <AnimatePresence
-          // exitBeforeEnter
           mode="wait"
           initial={true}
           onExitComplete={() => {
